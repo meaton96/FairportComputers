@@ -1,13 +1,18 @@
 package com.example.fairportcomputersservice;
 
+import android.support.v4.widget.*;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListView;
 
 
 public class SignIn extends ActionBarActivity {
 
+	private String[] mPlanetTitles;
+	private DrawerLayout mDrawerLayout;
+	private ListView mDrawerList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
