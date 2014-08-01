@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<previews>
+
+    <preview
+        name="Config1"
+        activity="com.example.fairportcomputersservice.SignIn"
+        config="layout-ldltr-sw360dp-w360dp-h640dp-normal-long-port-notnight-xhdpi-finger-keyssoft-nokeys-navhidden-nonav-1280x720-v20"
+        device="4.7&quot; WXGA"
+        devicestate="Portrait"
+        target="Android 4.4W"
+        theme="@style/AppTheme" >
+    </preview>
+
+</previews>
