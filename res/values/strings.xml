@@ -9,5 +9,6 @@
     <string name="email">Email</string>
     <string name="type">Type</string>
     <string name="problem">Problem</string>
+    <string name="title_activity_settings">Settings</string>
 
 </resources>
