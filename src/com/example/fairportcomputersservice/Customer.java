@@ -4,6 +4,7 @@ public class Customer {
 
 	private String name, phone, email, type, problem;
 	private int number;
+	private Bill bill;
 	public Customer(String n, String p, String e, String t, String pr, int num) {
 		name = n;
 		phone = p;
@@ -18,10 +19,12 @@ public class Customer {
 	public String getType() { return type; }
 	public String getProblem() { return problem; }
 	public int getNumber() { return number; }
+	public void setBill(Bill b) { this.bill = b; }
 	@Override
 	public String toString()
 	{
-		return name + " " + number + phone + " " + email + " " + type + " " + problem;
+		return name + " " + number + " " + phone + " " + email + " " + type +
+				" " + problem + " " + bill.getCost();
 	
 	}
 }

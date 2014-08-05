@@ -21,13 +21,12 @@ import android.widget.Toast;
 
 public class SignIn extends ActionBarActivity {
 	
-	private ArrayList<Customer> customers;
+	private Customer customer;
 	private final String DATA_FILE = "FairportComputersData";
 	private int customerNumber;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        customers = new ArrayList<Customer>();
         customerNumber = 0;
     }
     
@@ -62,7 +61,7 @@ public class SignIn extends ActionBarActivity {
     			}
     		}
     		catch (IOException e1) { Toast.makeText(getApplicationContext(), "cannot read file", Toast.LENGTH_SHORT).show(); }
-    		customers.add(new Customer(a, b, c, d, e, customerNumber + 1));
+    		customer = new Customer(a, b, c, d, e, customerNumber + 1);
     	}
     	/*
     	 * 
@@ -76,7 +75,7 @@ public class SignIn extends ActionBarActivity {
     	catch (FileNotFoundException e) { e.printStackTrace(); }
     	if (f != null) {
     		try {
-	    			f.write((customers.get(customerNumber)).toString().getBytes());
+	    			f.write(customer.toString().getBytes());
 	    			f.close();
 	    			Toast.makeText(getApplicationContext(), "success", Toast.LENGTH_SHORT).show();
     			}
